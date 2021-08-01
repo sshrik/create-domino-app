@@ -6,7 +6,7 @@ const config = {
   mode: 'development',
   entry: [path.resolve(__dirname, './app/script.js')],
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, './public/dist'),
     filename: 'script.js',
   },
   module: {

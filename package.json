@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --watch"
+    "build": "nodemon -e js,css,html --ignore 'public/*' --exec 'webpack && node index.js'"
   },
   "author": "",
   "license": "ISC",
@@ -21,12 +21,15 @@
     "css-loader": "^6.2.0",
     "directory-named-webpack-plugin": "^4.0.1",
     "file-loader": "^6.2.0",
+    "nodemon": "^2.0.12",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "webpack": "^5.47.1",
     "webpack-cli": "^4.7.2"
   },
   "dependencies": {
-    "@sshrik/domino": "^1.0.1"
+    "@sshrik/domino": "^1.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
   }
 }
