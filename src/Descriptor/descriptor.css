@@ -1,0 +1,8 @@
+.disc-container {
+  width: 300px;
+}
+
+.disc-container > img {
+  width: 300px;
+  object-fit: contain;
+}
