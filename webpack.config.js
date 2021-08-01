@@ -6,7 +6,7 @@ const config = {
   mode: 'development',
   entry: [path.resolve(__dirname, './app/script.js')],
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, './public/dist'),
     filename: 'script.js',
   },
   module: {
@@ -25,6 +25,10 @@ const config = {
       {
         test: /\.s[ac]ss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(jpe?g|png|svg|gif)$/,

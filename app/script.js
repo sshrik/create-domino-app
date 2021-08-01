@@ -1,8 +1,8 @@
 import {Dobee} from "@sshrik/domino";
-import App from '@/component/App/App';
-Dobee.registerComponent("ex-app", App);
+import App from '@/src/App/App';
+Dobee.registerComponent("domino-app", App);
 
 window.onload = () => {
   Dobee.upgradeComponent();
-  document.body.innerHTML = `<ex-app ></ex-app>`;
+  document.body.innerHTML = `<domino-app ></domino-app>`;
 }  
