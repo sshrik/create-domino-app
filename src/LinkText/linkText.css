@@ -1,0 +1,21 @@
+.link-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  
+}
+
+.link-text-container > p, .link-text-container > a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  margin-left: 8px;
+}
+
+.link-text-container > a {
+  text-decoration: none;
+  color: #01AAC8;
+}
+.link-text-container > a:visited {
+  color: #01AAC8;
+}

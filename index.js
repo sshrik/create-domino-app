@@ -13,5 +13,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Domino app is now runing at http://localhost:${port}`)
 })
