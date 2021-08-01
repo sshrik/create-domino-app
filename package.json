@@ -1,13 +1,22 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "name": "@sshrik/create-domino-app",
+  "version": "1.1.0",
+  "description": "Fency Starter API for Domino web-app",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon -e js,css,html --ignore 'public/*' --exec 'webpack && node index.js'",
+    "create-domino-app": "node build-tools.js",
     "build": "webpack"
   },
-  "author": "",
+  "bin": {
+    "create-domino-app": "./build-tools.js"
+  },
+  "bugs": {
+    "url": "https://github.com/sshrik/create-domino-app/issues",
+    "email": "chj878194@naver.com"
+  },
+  "homepage": "https://github.com/sshrik/create-domino-app#readme",
+  "author": "sshrik <chj878194@naver.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.8",
